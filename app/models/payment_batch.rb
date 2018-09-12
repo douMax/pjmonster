@@ -1,0 +1,2 @@
+class PaymentBatch < ApplicationRecord
+end
