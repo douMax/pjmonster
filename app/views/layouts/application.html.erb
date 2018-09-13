@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProjetApp</title>
+    <title>PJMonster</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -9,6 +9,23 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="ui top fixed inverted menu">
+      <a class="header item">
+        PJ Monster
+      </a>
+          
+      <div class="item">
+        <%= link_to "Projects", projects_path %>
+      </div>
+      
+    </div>
+
+    <div class="ui space60"></div>
+
+    <div class="ui container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>

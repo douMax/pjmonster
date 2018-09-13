@@ -1,0 +1,16 @@
+<div class="ui form">
+
+<%= form_for(@invoice) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+
+  <button class="ui green button">
+    Submit
+  </button>
+<% end %>
+
+</div>

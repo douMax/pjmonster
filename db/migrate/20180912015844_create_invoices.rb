@@ -8,6 +8,7 @@ class CreateInvoices < ActiveRecord::Migration[5.0]
       t.datetime :invoice_date
       t.datetime :due_date
       t.boolean :is_a_claim
+      t.decimal :amount, precision: 18, scale: 2
 
       t.timestamps
     end

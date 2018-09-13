@@ -1,0 +1,13 @@
+// Place all the styles related to the Project controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.invoice-row {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.table-holder {
+  top: 100px;
+  position: fixed;
+  height: 60%;
+}

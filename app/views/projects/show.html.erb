@@ -1,0 +1,47 @@
+
+<div class="fixed-tool-bar ui secondary menu">
+  <div class="header item">
+    <%= @project.name %> - Invoices
+  </div>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui buttons">  
+        <%= link_to 'New Invoice', new_invoice_path, class:"ui green button basic"  %>
+        <a class="ui green button basic">Upload</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui space30"></div>
+<div class="talbe-holder">
+
+<div class="ui grid">
+  <div class="row invoice-row">
+    <div class="column three wide"><strong>Vendor</strong></div>
+    <div class="column two wide"><strong>Invoice No.</strong></div>
+    <div class="column two wide"><strong>Amount</strong></div>
+    <div class="column two wide"><strong>Status</strong></div>
+    <div class="column two wide"><strong>Invoice Copy</strong></div>
+    <div class="column two wide"><strong>Payment</strong></div>
+  </div>
+
+  <% @project.invoices.each do |inv| %>
+  <div class="row invoice-row">
+    <div class="column three wide"><%= inv.vendor_name %></div>
+    <div class="column two wide"><%= inv.invoice_number %></div>
+    <div class="column two wide"><%= inv.amount %></div>
+    <div class="column two wide">
+      <%= ui_status_label inv.status %>
+    </div>
+    <div class="column two wide"></div>
+    <div class="column two wide"></div>
+  </div>
+  <% end %>
+
+
+</div>
+</div>
+
+
+
