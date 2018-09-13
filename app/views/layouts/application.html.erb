@@ -10,21 +10,22 @@
 
   <body>
 
-    <div class="ui top fixed inverted menu">
-      <a class="header item">
-        PJ Monster
-      </a>
+    <div id="app">
+      <div id="top-nav">
+        <div class="ui top fixed inverted menu">
+          <a class="header item">
+            PJ Monster
+          </a>
+              
+          <div class="item">
+            <%= link_to "Projects", projects_path %>
+          </div>
           
-      <div class="item">
-        <%= link_to "Projects", projects_path %>
+        </div>
       </div>
-      
-    </div>
-
-    <div class="ui space60"></div>
-
-    <div class="ui container">
-      <%= yield %>
+      <div id="page-content">
+        <%= yield %>
+      </div>
     </div>
 
   </body>
