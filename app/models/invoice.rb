@@ -10,11 +10,13 @@
 #  invoice_date     :datetime
 #  due_date         :datetime
 #  is_a_claim       :boolean
+#  amount           :decimal(18, 2)
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #  project_id       :integer
 #  vendor_id        :integer
 #  payment_batch_id :integer
+#  file_url         :text
 #
 
 class Invoice < ApplicationRecord

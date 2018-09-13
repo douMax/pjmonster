@@ -59,6 +59,10 @@
   top: calc(10vh + 80px);
   height: 50px;
   width: 90vw;
+  // padding: 10px;
+  // border: 1px solid rgba(34, 36, 38, 0.35);
+  // background-color: antiquewhite;
+  // border-radius: 3px;
 }
 
 .table-body {
@@ -68,6 +72,9 @@
   overflow-y: scroll;
   overflow-x: hidden;
   width: 90vw;
+  // border: 1px solid rgba(34, 36, 38, 0.35);
+  // border-radius: 0 0 3px 3px;
+  // padding: 10px;
 }
 
 .invoice-row {
