@@ -26,7 +26,7 @@ class Invoice < ApplicationRecord
   belongs_to :vendor, optional: true
 
   enum :status => {"due":1, "overdue":2, "paid":3}
-  
+
   def vendor_name
     self.vendor.name if self.vendor
   end

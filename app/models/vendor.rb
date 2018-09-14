@@ -13,7 +13,7 @@
 class Vendor < ApplicationRecord
   has_many :invoices
 
-  has_and_belongs_to_many :projects, through: :invoices
+  has_many :projects, through: :invoices
 
 
 end

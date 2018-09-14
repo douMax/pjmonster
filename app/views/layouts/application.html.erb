@@ -11,19 +11,11 @@
   <body>
 
     <div id="app">
+      <%= render '/layouts/message_toaster' %>
       <div id="top-nav">
-        <div class="ui top fixed inverted menu">
-          <a class="header item">
-            PJ Monster
-          </a>
-              
-          <div class="item">
-            <%= link_to "Projects", projects_path %>
-          </div>
-          
-        </div>
+        <%= render '/layouts/top_nav' %>
       </div>
-      <div id="page-content">
+      <div id="main-content">
         <%= yield %>
       </div>
     </div>

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post '/login' => 'session#create' # check credentials and attempt login (set session)
   delete '/login' => 'session#destroy' # log out destroy the session
 
+  post '/invoices/import' => 'invoices#import_invoices', :as => "invoices_import"
+
   resources :users, :projects, :invoices, :vendors
 
 

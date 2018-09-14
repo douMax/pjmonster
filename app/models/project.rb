@@ -17,7 +17,7 @@ class Project < ApplicationRecord
   has_many :invoices
   has_many :payment_batches
 
-  has_and_belongs_to_many :vendors, through: :invoices
+  has_many :vendors, through: :invoices
   has_and_belongs_to_many :users
 
 end
