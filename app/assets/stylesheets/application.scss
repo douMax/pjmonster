@@ -37,7 +37,6 @@
 
     #page-content {
       position: fixed;
-      top: 10vh;
       left: 5vw;
       height: 90vh;
       width: 90vw;
@@ -79,9 +78,10 @@
 
 .table-header {
   position: fixed;
-  top: calc(10vh + 80px);
-  height: 50px;
+  top: calc(10vh + 60px);
+  height: 40px;
   width: 90vw;
+
   // padding: 10px;
   // border: 1px solid rgba(34, 36, 38, 0.35);
   // background-color: antiquewhite;
@@ -90,11 +90,13 @@
 
 .table-body {
   position: fixed;
-  top: calc(10vh + 150px);
+  top: calc(10vh + 100px);
   height: calc(90vh - 200px);
   overflow-y: scroll;
   overflow-x: hidden;
   width: 90vw;
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+
   // border: 1px solid rgba(34, 36, 38, 0.35);
   // border-radius: 0 0 3px 3px;
   // padding: 10px;
