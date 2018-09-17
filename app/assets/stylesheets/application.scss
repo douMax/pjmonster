@@ -79,7 +79,7 @@
 
 .table-header {
   position: fixed;
-  top: calc(10vh + 60px);
+  top: calc(10vh + 90px);
   height: 40px;
   width: 90vw;
 
@@ -91,11 +91,12 @@
 
 .table-body {
   position: fixed;
-  top: calc(10vh + 100px);
+  top: calc(10vh + 125px);
   height: calc(90vh - 200px);
   overflow-y: scroll;
   overflow-x: hidden;
   width: 90vw;
+  padding-top: 20px;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
 
   // border: 1px solid rgba(34, 36, 38, 0.35);
