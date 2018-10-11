@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180917033904) do
+ActiveRecord::Schema.define(version: 20180917034619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20180917033904) do
     t.decimal  "amount",      precision: 18, scale: 2
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
+    t.integer  "user_id"
+    t.integer  "project_id"
   end
 
   create_table "invoices", force: :cascade do |t|
@@ -41,6 +43,7 @@ ActiveRecord::Schema.define(version: 20180917033904) do
     t.integer  "vendor_id"
     t.integer  "payment_batch_id"
     t.text     "file_url"
+    t.integer  "user_id"
   end
 
   create_table "payment_batches", force: :cascade do |t|

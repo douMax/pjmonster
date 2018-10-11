@@ -68,7 +68,7 @@
         <%= ui_status_label inv.status %>
       </div>
       <div class="column two wide"><%= link_to_associate inv.vendor_name, inv.vendor, "vendors", "" %></div>
-      <div class="column one wide"><%= inv.invoice_number %></div>
+      <div class="column one wide show-handle"><%= inv.invoice_number %></div>
       <div class="column three wide"><%= inv.description %></div>
       <div class="column two wide"><%= inv.due_date.strftime('%d/%m/%Y') if inv.due_date %></div>
       <div class="column two wide"><%= number_to_currency inv.amount %></div>

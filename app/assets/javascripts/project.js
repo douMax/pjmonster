@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.invoice-row').on('click', function(){
+  $('.show-handle').on('click', function(){
     console.log('invoice row clicked')
     $('#invoice-detail').toggleClass('show')
   })
